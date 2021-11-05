@@ -1,0 +1,17 @@
+{
+  "name": "ws-test-node",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "npm run build && node dist/index.js",
+    "build": "tsc --build --clean && rm -rf dist && tsc --build"
+  },
+  "dependencies": {
+    "@excalibur-enterprise/rpc-websocket": "file:../websocket"
+  },
+  "devDependencies": {
+    "@excalibur-enterprise/eslint-config-xclbr": "^1.0.3",
+    "@types/node": "^16.11.6",
+    "ts-node": "^10.2.1",
+    "typescript": "^4.4.4"
+  }
+}
